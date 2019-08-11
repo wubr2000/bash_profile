@@ -19,7 +19,13 @@ blue="\[\033[0;34m\]"
 purple="\[\033[0;35m\]"
 reset="\[\033[0m\]"
 
-export PS1="$purple\u$green \W $ $reset"
+# Git branch in prompt.
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="$purple\u @ $purple\h $blue\w $green\$(parse_git_branch) $purple$ $reset"
 
 
 # Some interesting opening info
