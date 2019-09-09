@@ -9,10 +9,6 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-#AWS Keys
-export AWS_ACCESS_KEY_ID=ASIAJHJGDTNIJADYONAQ
-export AWS_SECRET_ACCESS_KEY=RWnQ4DEV074oKyJ3YyGFdcrPcLESMZJlVQS5zFR7
-
 # colors!
 green="\[\033[0;32m\]"
 blue="\[\033[0;34m\]"
